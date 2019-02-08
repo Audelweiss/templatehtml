@@ -1,0 +1,214 @@
+/* GENERAL https://colorlib.com/preview/#educature */
+html {
+  scroll-behavior: smooth; /*pour faire un smoothscrool sur les ancres*/
+}
+
+body{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.container {
+    width: 1060px;
+    margin:0 auto;
+}
+.flex {display: flex;}
+.center {align-items: center;}
+.vertical-align {justify-content: center;}
+
+.bouton {
+    border:1px solid black;
+    padding: 7px 10px;
+    display: inline-block;
+}
+h2 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+h3 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* HEADER */
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    z-index:9;
+}
+
+header.fixed {
+    background: black;
+    color: white;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div ul li {
+    display: inline-block;
+    margin-left:20px;
+}
+
+/* SECTION 1 #entete */
+
+#entete {
+    padding-top:80px;
+    height: 70vh;
+    background: #f2f2f2;
+}
+#entete div {
+    text-align: center;
+}
+#entete h1 {
+    font-size: 50px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+#entete h2 {
+    font-size: 15px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 35px auto;
+    width:60%;
+}
+
+/* SECTION 2 #presentation */
+
+#presentation {
+    padding: 100px 0;
+}
+
+#presentation img {
+    flex-basis: 38%;
+    display: inline-block;
+}
+
+#presentation div {
+    flex-direction: column;
+    flex-basis:55%;
+    margin-left: 6%;
+}
+
+/* Section 3 #concept */
+
+#concept {
+    background: #f2f2f2;
+    padding: 100px 0;
+}
+
+#concept div {
+    flex-direction: column;
+}
+
+#concept div h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#concept div li {text-align: center;}
+
+#concept img {
+    display: inline-block;
+    margin-bottom: 25px
+}
+
+/* Section 4 #foncitonnalites */
+
+#fonctionnalites {
+    padding : 100px 0;
+}
+
+#fonctionnalites h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#fonctionnalites article {
+    margin: 100px -10px;
+}
+#fonctionnalites article:first-of-type {
+    margin-top: 0;
+}
+#fonctionnalites article:last-of-type {
+    margin-bottom: 0;
+}
+#fonctionnalites article>* {
+    margin: 0 10px;
+}
+
+#fonctionnalites article div {
+     flex-grow: 2;
+     flex-direction: column;
+}
+
+#fonctionnalites article img {
+    width: 38%;
+    flex-grow: 1;
+}
+
+#fonctionnalites article:nth-of-type(2n) div {
+     order: -1
+}
+#fonctionnalites article:nth-of-type(2n) img {
+     order: 1
+}
+
+/* Section 5 #appli*/
+
+#appli{
+    background: #f2f2f2;
+}
+
+#appli div.container {
+    position: relative;
+    padding: 100px 0;
+}
+
+#appli div.txt {
+    flex-direction: column;
+}
+
+#appli div.txt div a {
+    margin: 20px 20px 0 0;
+}
+
+#appli img {
+    margin-top:-200px;
+    height:500px;
+}
+
+/* Footer */
+
+footer{
+    background: black;
+    padding: 40px 0;
+    color:white;
+}
+
+footer nav {
+    justify-content: space-between;
+}
+
+footer nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer nav #items li:not(:last-of-type)::after {
+    content:'-';
+    margin-left: 20px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Titre de la page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header de la page, contient la navigation du site -->
+    <header>
+        <div class="container">
+            <a href="./"><img src="img/logo.jpg" alt="logo" id="logo"></a>
+            <nav>
+                <ul>
+                <li><a href="./">Accueil</a></li>
+                    <li><a href="#">Lien 1</a></li>
+                    <li><a href="#">Lien 2</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- fin header -->
+
+    <!-- section d'en-tête -->
+    <section id="entete" class="flex vertical-align center">
+        <div class="container">
+            <h1>Titre de la page ici</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod nisi vitae malesuada fermentum. Quisque eu tincidunt elit. Nam efficitur vestibulum porta. </h2>
+            <a href="#" class="bouton">Label bouton</a>
+        </div>
+    </section>
+    <!-- fin section d'en-tête -->
+
+    <!-- section de présentation -->
+    <section id="presentation" class="container flex">
+        <img src="img/imagex400.jpg" alt="image de produit">
+        <div class="flex vertical-align">
+            <h2>Sous-titre de présentation</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod nisi vitae malesuada fermentum. Quisque eu tincidunt elit. Nam efficitur vestibulum porta. Phasellus auctor, neque non feugiat eleifend, mi quam pellentesque velit, at dignissim quam dolor eu sapien. Pellentesque est arcu, suscipit ac ligula vel, egestas pharetra eros. Nam pellentesque molestie elit, eu auctor purus condimentum vel. Pellentesque faucibus egestas diam, tincidunt aliquet lacus tempus malesuada.
+            </p>
+        </div>
+    </section>
+    <!-- fin section de présentation -->
+
+    <!--  section de concept -->
+    <section id="concept">
+        <div class="container flex vertical-align">
+            <h2>Sous-titre de concept</h2>
+            <ul class="flex">
+                <li>
+                    <img src="img/iconex100.jpg" alt="icone">
+                    <h3>Petit titre</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li>
+                    <img src="img/iconex100.jpg" alt="icone">
+                    <h3>Petit titre</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li>
+                    <img src="img/iconex100.jpg" alt="icone">
+                    <h3>Petit titre</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li>
+                    <img src="img/iconex100.jpg" alt="icone">
+                    <h3>Petit titre</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+<!-- fin section de concept -->
+
+<!--  section de fonctionnalités -->
+    <section id="fonctionnalites" class="container">
+        <h2>Sous-titre de fonctionnalités</h2>
+        <article class="flex vertical-align">
+            <img src="img/imagex250.jpg" alt="image">
+            <div class="flex vertical-align">
+                <h3>Fonctionnalité 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod nisi vitae malesuada fermentum. Quisque eu
+                tincidunt elit. Nam efficitur vestibulum porta.</p>
+            </div>
+        </article>
+        <article class="flex vertical-align">
+            <img src="img/imagex250.jpg" alt="image">
+            <div class="flex vertical-align">
+                <h3>Fonctionnalité 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod nisi vitae malesuada fermentum. Quisque eu
+                tincidunt elit. Nam efficitur vestibulum porta.</p>
+            </div>
+        </article>
+        <article class="flex vertical-align">
+            <img src="img/imagex250.jpg" alt="image">
+            <div class="flex vertical-align">
+                <h3>Fonctionnalité 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod nisi vitae malesuada fermentum.
+                    Quisque eu
+                    tincidunt elit. Nam efficitur vestibulum porta.</p>
+            </div>
+        </article>
+    </section>
+<!-- fin section de fonctionnalité -->
+
+<!--  section de appli mobile -->
+<section id="appli">
+    <div class="container flex">
+        <div class="txt flex">
+            <h2>Sous-titre application mobile</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod nisi vitae malesuada fermentum.
+                Quisque eu
+                tincidunt elit. Nam efficitur vestibulum porta.</p>
+                <div>
+<a href="" class="bouton">Télécharger pour iOS</a><a href="" class="bouton">Télécharger pour Android</a>
+                </div>
+
+        </div>
+        <img src="img/appli.png" alt="image">
+    </div>
+</section>
+<!-- fin section de appli mobile -->
+
+<!-- footer -->
+<footer>
+    <nav class="container flex">
+        <ul id="items">
+            <li>Copyright</li>
+            <li><a href="">Lien 1</a></li>
+            <li><a href="">Lien 2</a></li>
+        </ul>
+        <ul id="rs">
+            <li><a href=""><img src="" alt="facebook"></a></li>
+            <li><a href=""><img src="" alt="instagram"></a></li>
+        </ul>
+    </nav>
+</footer>
+<!-- fin footer -->
+
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.querySelector("header").classList.add("fixed");
+        } else {
+            document.querySelector("header").classList.remove("fixed");
+        }
+        }
+    </script>
+</body>
+</html>
